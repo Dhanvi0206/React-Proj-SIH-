@@ -150,6 +150,7 @@ http://localhost:3000
 
 ---
 ## output images
+<img width="1440" height="816" alt="Screenshot 2026-03-01 at 8 02 24 PM" src="https://github.com/user-attachments/assets/98a4815b-e839-4098-9e33-085bbc125784" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/633c524a-88ce-402e-a494-f6cf45b7af7c" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4ea617e9-9be4-4243-8189-2835869b21af" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fcfaeffc-b87a-4604-9599-19c1cce95a16" />
