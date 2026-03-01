@@ -1,70 +1,142 @@
-# Getting Started with Create React App
+🚀 Smart India Hackathon 2025 Portal (Frontend)
+📌 Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a fully functional frontend simulation of the Smart India Hackathon (SIH) 2025 Portal built using React.js.
 
-## Available Scripts
+It includes:
 
-In the project directory, you can run:
+Dynamic Problem Statements
 
-### `npm start`
+Detailed Problem View
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Application Form with Team Member Validation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+PPT Upload Validation
 
-### `npm test`
+Confirmation Page with Submitted Data
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Professional Government-Style UI
 
-### `npm run build`
+Responsive Design
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🛠 Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+React.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+React Router DOM
 
-### `npm run eject`
+CSS3
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+JavaScript (ES6)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Git & GitHub
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+📂 Project Structure
+src/
+│
+├── components/
+│   ├── layout/
+│   │   ├── Header.jsx
+│   │   └── Footer.jsx
+│   └── ThemeCard.jsx
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── Login.jsx
+│   ├── ProblemStatements.jsx
+│   ├── ProblemDetails.jsx
+│   ├── Application.jsx
+│   └── Confirmation.jsx
+│
+├── sections/
+│   ├── AboutSection.jsx
+│   ├── GuidelinesSection.jsx
+│   ├── FAQSection.jsx
+│   └── ContactSection.jsx
+│
+├── data/
+│   └── problemData.js
+│
+├── images/
+│   └── sih.png
+│
+├── App.js
+└── index.js
+⚙️ Features
+🔹 Problem Statements
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Multiple problem listings
 
-## Learn More
+Detailed problem view
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Apply button navigation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🔹 Application Form
 
-### Code Splitting
+Team Leader validation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Maximum 5 members
 
-### Analyzing the Bundle Size
+All field validation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Abstract submission
 
-### Making a Progressive Web App
+PPT file validation (.ppt / .pptx only)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+🔹 Confirmation Page
 
-### Advanced Configuration
+Displays team members
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Displays abstract
 
-### Deployment
+Shows submission success
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+🔹 UI Design
 
-### `npm run build` fails to minify
+Government-style layout
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Smooth horizontal theme slider
+
+Clean card design
+
+Responsive layout
+
+▶️ How To Run The Project
+Step 1: Clone Repository
+git clone https://github.com/yourusername/SIH-Portal-Frontend.git
+Step 2: Navigate to Project
+cd SIH-Portal-Frontend
+Step 3: Install Dependencies
+npm install
+Step 4: Start Development Server
+npm start
+
+The app will run at:
+
+http://localhost:3000
+🔁 Application Flow
+
+Visit Problem Statements
+
+Select a Problem
+
+Click Apply
+
+Fill Application Form
+
+Submit
+
+View Confirmation Page
+
+📌 Future Enhancements
+
+Backend Integration (Node.js / Firebase)
+
+Database Storage
+
+Authentication System
+
+Admin Dashboard
+
+Deployment (Vercel / Netlify)
+
