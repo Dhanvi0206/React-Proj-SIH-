@@ -4,17 +4,36 @@ import "./login.css";
 
 function Login() {
   const navigate = useNavigate();
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [role, setRole] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (role !== "Team Leader") {
-      alert("Only Team Leader can apply");
+    if (email.trim() === "") {
+      alert("Please enter Email");
       return;
     }
 
-    navigate("/apply/1"); // temporary id, later we pass real id
+    if (password.trim() === "") {
+      alert("Please enter Password");
+      return;
+    }
+
+    if (role === "") {
+      alert("Please select User Role");
+      return;
+    }
+
+    if (role !== "Team Leader") {
+      alert("Only Team Leader can proceed");
+      return;
+    }
+
+    // Navigate to Problem Statements page
+    navigate("/problems");
   };
 
   return (
@@ -23,22 +42,47 @@ function Login() {
 
       <div className="login-box">
         <form onSubmit={handleSubmit}>
-          <input type="email" placeholder="Email" required />
-          <input type="password" placeholder="Password" required />
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
 
-          <select required onChange={(e) => setRole(e.target.value)}>
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+
+          <select
+            value={role}
+            onChange={(e) => setRole(e.target.value)}
+            required
+          >
             <option value="">Select User Role</option>
+
             <option>Super Admin</option>
+
             <option>Review Committee Personnel</option>
+
             <option>Problem Statement Creators/Challengers</option>
+
             <option>College/Institute Spoc</option>
+
             <option>Team Leader</option>
+
             <option>Evaluator</option>
           </select>
 
           <p className="forgot">Forgot Your Password?</p>
 
-          <button className="submit-btn">Submit</button>
+          <button type="submit" className="submit-btn">
+            Submit
+          </button>
         </form>
       </div>
     </div>
